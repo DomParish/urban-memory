@@ -12,5 +12,11 @@ FetchContent_Declare(SFML
     SYSTEM)
 FetchContent_MakeAvailable(SFML)
 
-add_executable(main src/main.cpp)
+add_executable(main src/main.cpp
+        src/Game.cpp
+        src/Game.h
+        src/Player.cpp
+        src/Player.h
+        src/Enemy.cpp
+        src/Enemy.h)
 target_link_libraries(main PRIVATE SFML::Graphics)
